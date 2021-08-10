@@ -1,0 +1,20 @@
+{
+    "Home": {
+      "welcomeText": "Unser Anliegen ist es Jugendliche und Erwachsene zum Spielen zu motivieren. Deshalb bemühen wir uns regelmässige Events zu planen, bei denen jedes Mitglied teilnehmen kann. Falls Sie Interesse an einem Schnuppertag haben, können Sie uns gerne kontaktieren.",
+      "sectionTitle": "Lageplan1",
+      "sectionText": "Die Halle in der wir Spielen können Sie hier fidnen1",
+      "sectionButtonnText": "Zum Lageplan1"
+    },
+    "About": {
+      "welcomeText": "",
+      "sectionTitle": "",
+      "sectionText": "",
+      "sectionButtonnText": ""
+    },
+    "Agenda": {
+      "welcomeText": "Momentan haben wir nur Donnerstag Abend die Halle Gebucht",
+      "sectionTitle": "Lageplan2",
+      "sectionText": "Die Halle in der wir Spielen können Sie hier fidnen",
+      "sectionButtonnText": "Zum Lageplan"
+    }
+  }

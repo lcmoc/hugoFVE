@@ -1,0 +1,29 @@
+<div class="content mb-52">
+    <div class="flex items-center justify-center mt-5">
+        <h1 class="text-5xl font-black">{{ .Title }}</h1>
+    </div>
+    <div class="flex justify-center mt-7">
+        {{ if eq .Title "Wilkommen" .Title "Spielplan" }}
+        <div class="flex justify-center w-4/5 text-center">
+            {{ if eq .Title "Wilkommen"}}
+                <p class="text-xl">{{ .Site.Data.content.Home.welcomeText }}</p>
+            {{ else if eq .Title "Spielplan"}}
+                <p class="text-xl">{{ .Site.Data.content.Agenda.welcomeText }}</p>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+{{ $}}
+    {{ if eq .Params.section true }}
+        <div class="section flex flex-col text-center justify-center items-center bg-gradient-to-r from-purple-500 to-green-400 w-full h-72 ">
+            <h2 class="text-4xl font-black">{{ .Site.Data.content  .Params.sectionTitle}}</h2>
+            {{ if eq .Title "Wilkommen" }}
+                <p>{{ .Site.Data.content.Home.sectionText }}</p>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 border-blue-700 hover:border-blue-500 rounded-lg w-40 h-12 m-4"><a href="">Zum Lageplan</a></button>
+            {{ else if  eq .Title "Spielplan" }}
+            <p>{{ .Site.Data.content.Agenda.sectionText }}</p>
+            <a href="">Zum Lageplan</a>
+            {{ end }}
+        </div>
+    {{ end }}
+</div>
