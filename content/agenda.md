@@ -10,6 +10,8 @@ img1: false
 imgUrl: ""
 imgAlt: ""
 
+timeTable: true
+
 section: false
 sectionTitle: "Lageplan"
 sectionText: "Die Halle in der wir Spielen können Sie hier finden"
