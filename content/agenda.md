@@ -12,12 +12,16 @@ imgAlt: ""
 
 timeTable: true
 
-section: false
+section: true
 sectionTitle: "Lageplan"
-sectionText: "Die Halle in der wir Spielen können Sie hier finden"
+sectionText: "Die Halle in der wir Spielen können Sie hier finden:"
 sectionButtonnText: "Zum Lageplan"
 
 img2: false
 imgUrl: ""
 imgAlt: ""
+
+optionalText1: true
+optionalTitle1: "Events"
+optionalContentText1: "Hier werden Sie zukünftige Events sehen. Wir werden mit den Einahmen von Mitgliedern Preise organisieren, welche von den Mitgliedern bestimmt werden."
 ---
