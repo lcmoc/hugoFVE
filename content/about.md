@@ -22,7 +22,7 @@ imgUrl2: ""
 imgAlt2: ""
 
 optionalText1: true
-optionalTitle1: "Leitbild"
+optionalTitle1: ""
 optionalContentText1: "Wir wollen Jugentliche und Erwachsene zum Spielen motivieren, uns Unterhalten und Freundschaften schliessen"
 
 
@@ -35,4 +35,6 @@ link1: ""
 optionalButton2: true
 optionalButton2Text: "Email"
 link2: ""
+
+cards: true
 ---

@@ -13,9 +13,9 @@ imgAlt1: ""
 timeTable: false
 
 section: true
-sectionTitle: "Lageplan"
-sectionText: "Die Halle in der wir Spielen können Sie hier finden"
-sectionButtonnText: "Zum Lageplan"
+sectionTitle: "Schnuppertag"
+sectionText: "Melden sie sich hier zu einem Schnuppertag an"
+sectionButtonnText: "Anmelden"
 
 img2: false
 imgUrl2: ""
