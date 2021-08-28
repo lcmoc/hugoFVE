@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Anmelden"
+date: 2021-08-20T10:26:09+02:00
 draft: true
 
 welcomeText: false
@@ -27,13 +27,15 @@ optionalContentText1: ""
 
 cards: false
 
-optionalText2: false
-optionalTitle2: ""
+optionalText2: true
+optionalTitle2: "Oder Telefonisch"
 optionalContentText2: ""
-optionalButton1: false
-optionalButton1Text: ""
+optionalButton1: true
+optionalButton1Text: "Anrufen"
 link1: ""
 optionalButton2: false
 optionalButton2Text: ""
 link2: ""
+
+form: true
 ---
