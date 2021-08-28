@@ -24,4 +24,16 @@ imgAlt2: ""
 optionalText1: true
 optionalTitle1: "News"
 optionalContentText1: "Hier werden Sie zukünfig die News sehen."
+
+cards: false
+
+optionalText2: false
+optionalTitle2: ""
+optionalContentText2: ""
+optionalButton1: false
+optionalButton1Text: ""
+link1: ""
+optionalButton2: false
+optionalButton2Text: ""
+link2: ""
 ---

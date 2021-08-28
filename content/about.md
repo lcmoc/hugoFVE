@@ -25,6 +25,7 @@ optionalText1: true
 optionalTitle1: ""
 optionalContentText1: "Wir wollen Jugentliche und Erwachsene zum Spielen motivieren, uns Unterhalten und Freundschaften schliessen"
 
+cards: true
 
 optionalText2: true
 optionalTitle2: "Kontaktdaten"
@@ -36,5 +37,4 @@ optionalButton2: true
 optionalButton2Text: "Email"
 link2: ""
 
-cards: true
 ---
