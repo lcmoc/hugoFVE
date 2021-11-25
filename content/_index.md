@@ -16,6 +16,8 @@ section: true
 sectionTitle: "Schnuppertag"
 sectionText: "Melden sie sich hier zu einem Schnuppertag an"
 sectionButtonnText: "Anmelden"
+sectionLink: "/about#optionalText2"
+sectionNewWindow: false
 
 img2: false
 imgUrl2: ""
