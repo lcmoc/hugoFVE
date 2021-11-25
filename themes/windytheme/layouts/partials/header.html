@@ -1,23 +1,50 @@
 <header class="bg-gradient-to-r from-purple-500 to-green-400 w-full text-3xl">
-    <ul class="flex justify-around items-center p-4 sm:p-10">
-        <li class="w-24 flex items-center justify-center sm:w-32">
-            <a href="/">   
-                <img src="../../../../resources/_gen/images/Logo-schwarz.png" alt="">
-            </a>   
-        </li>
-        <li class="w-24 flex items-center justify-center sm:w-32">
-            {{ if eq .Title "Über Uns" }}
-                <a class="text-blue-700 text-xl sm:text-3xl" href="/about">Über uns</a>
-            {{ else }}
-                <a class="text-white hover:text-blue-700 transition delay-150 duration-300 text-xl sm:text-3xl" href="/about">Über uns</a>
-            {{ end }}
-        </li>
-        <li class="w-24 flex items-center justify-center sm:w-32">
-            {{ if eq .Title "Spielplan" }}
-                <a class="text-blue-700 text-xl sm:text-3xl" href="/about">Spielplan</a>
-            {{ else }}
-                <a class="text-white hover:text-blue-700 transition delay-150 duration-300 text-xl sm:text-3xl" href="/agenda">Spielplan</a>
-            {{ end }}
-        </li>
-    </ul>
+  <ul class="flex justify-around items-center p-4 sm:p-10">
+    <li class="w-24 flex items-center justify-center sm:w-32">
+      <a href="/">
+        <div>
+          {{ $asset := resources.Get "/Logo.png" }} {{ $img := $asset.Fit "600x400" }}
+            <img class="h-24" alt="Logo" src="{{ $img.RelPermalink }}" />
+        </div>
+      </a>
+    </li>
+    <li class="w-24 flex items-center justify-center sm:w-32">
+      {{ if eq .Title "Über Uns" }}
+      <a class="text-blue-700 text-xl sm:text-3xl" href="/about">Über uns</a>
+      {{ else }}
+      <a
+        class="
+          text-white
+          hover:text-blue-700
+          transition
+          delay-150
+          duration-300
+          text-xl
+          sm:text-3xl
+        "
+        href="/about"
+        >Über uns</a
+      >
+      {{ end }}
+    </li>
+    <li class="w-24 flex items-center justify-center sm:w-32">
+      {{ if eq .Title "Spielplan" }}
+      <a class="text-blue-700 text-xl sm:text-3xl" href="/about">Spielplan</a>
+      {{ else }}
+      <a
+        class="
+          text-white
+          hover:text-blue-700
+          transition
+          delay-150
+          duration-300
+          text-xl
+          sm:text-3xl
+        "
+        href="/agenda"
+        >Spielplan</a
+      >
+      {{ end }}
+    </li>
+  </ul>
 </header>
