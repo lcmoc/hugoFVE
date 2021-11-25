@@ -1,14 +1,12 @@
-<div class="content mb-52">
-    <div class="flex items-center justify-center mt-5">
-        <h1 class="text-5xl font-black">{{ .Title }}</h1>
-    </div>
-    {{ if .Params.welcomeText }}
-    <div class="flex justify-center mt-7">
-        <div class="flex justify-center w-4/5 text-center">
-                <p class="text-xl">{{ .Params.text }}</p>
+<div class="content mb-24 sm:mb-52">
+    <div class="flex items-center justify-center mt-20 flex-col">
+        <div class="flex flex-col justify-center w-3/5 text-center sm:w-4/5">
+            <h1 class="font-black text-4xl sm:text-5xl mb-5">{{ .Title }}</h1>
+            {{ if .Params.welcomeText }}
+                <p class="text-base sm:text-lg">{{ .Params.text }}</p>
+            {{ end }}
         </div>
     </div>
-    {{ end }}
     {{ if .Params.img1 }}
         <div class="flex justify-center mt-7">
             <img src="{{ .Params.imgUrl1 }}" alt="{{ .Params.imgAlt1 }}">      
@@ -20,10 +18,10 @@
         {{- partial "timeTable.html" . -}}
     {{ end }}
     {{ if .Params.section }}
-        <div class="section flex flex-col text-center justify-center items-center bg-gradient-to-r from-purple-500 to-green-400 w-full h-72 shadow-2xl mt-40">
-            <h2 class="text-4xl font-black mb-3">{{ .Params.sectionTitle }}</h2>
-            <p class="text-xl">{{ .Params.sectionText }}</p>
-            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 border-blue-700 hover:border-blue-500 rounded-lg w-40 h-12 m-4"><a href="/form">{{ .Params.sectionButtonnText }}</a></button>
+        <div class="section flex flex-col text-center justify-center items-center bg-gradient-to-r from-purple-500 to-green-400 w-full h-72 shadow-2xl mt-24 sm:mt-40">
+            <h2 class="text-3xl font-black mb-3 sm:text-4xl">{{ .Params.sectionTitle }}</h2>
+            <p class="text-base sm:text-xl">{{ .Params.sectionText }}</p>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 border-blue-700 hover:border-blue-500 rounded-lg m-4 w-32 sm:w-40 sm:h-12"><a href={{ .Params.sectionLink }} {{ if .Params.sectionNewWindow }}target="_blank" {{ end }} >{{ .Params.sectionButtonnText }}</a></button>
         </div>
     {{ end }}
     {{ if .Params.img2 }}
@@ -32,68 +30,28 @@
         </div>
     {{ end }}
     {{ if .Params.optionalText1 }}
-        <div class="flex items-center justify-center w-full mt- text-center mt-40">
-            <div class="flex flex-col items-center w-4/5">
-                <h2 class="text-5xl font-black mb-3">{{ .Params.optionalTitle1 }}</h2>
-                <p class="text-xl">{{ .Params.optionalContentText1 }}</p>    
+        <div class="flex items-center justify-center w-full text-center mt-24 sm:mt-40">
+            <div class="flex flex-col items-center w-3/5">
+                <h2 class="text-3xl font-black mb-3 sm:text-5xl">{{ .Params.optionalTitle1 }}</h2>
+                <p class="text-base sm:text-xl">{{ .Params.optionalContentText1 }}</p>    
             </div>
         </div>
-    {{ end }}
-        {{ with .Params.cards }}
-    <div class="flex w-full mt-40 h-auto flex-col bg-gradient-to-r from-purple-500 to-green-400 shadow-2xl">
-        <div class="flex flex-col bg-gray-100 p-10 shadow-2xl mb-10 mt-10">
-            <h2 class="text-4xl font-black mb-5">Vorname Nachname</h2>
-            <p class="block text-xl">Position:</p>
-            <div class="flex justify-between w-auto h-auto">
-                <div class="border h-64 w-96 flex items-center justify-center mr-5 mb-14">Foto</div>
-                <div class="w-4/5">
-                    <p class="text-xl">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <p class="block text-xl mt-4">Alter:</p>
-                    <p class="block text-xl">Hobbys:</p>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col bg-gray-100 p-10 shadow-2xl mb-10 mt-10">
-            <h2 class="text-4xl font-black mb-5">Vorname Nachname</h2>
-            <p class="block text-xl">Position:</p>
-            <div class="flex justify-between w-auto h-auto">
-                <div class="border h-64 w-96 flex items-center justify-center mr-5 mb-14">Foto</div>
-                <div class="w-4/5">
-                    <p class="text-xl">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <p class="block text-xl mt-4">Alter:</p>
-                    <p class="block text-xl">Hobbys:</p>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col bg-gray-100 p-10 shadow-2xl mb-10 mt-10 ">
-            <h2 class="text-4xl font-black mb-5">Vorname Nachname</h2>
-            <p class="block text-xl">Position:</p>
-            <div class="flex justify-between w-auto h-auto">
-                <div class="border h-64 w-96 flex items-center justify-center mr-5 mb-14">Foto</div>
-                <div class="w-4/5">
-                    <p class="text-xl">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <p class="block text-xl mt-4">Alter:</p>
-                    <p class="block text-xl">Hobbys:</p>
-                </div>
-            </div>
-        </div>
-    </div>
     {{ end }}
     {{ with .Params.form }}
         {{- partial "form.html" . -}}
     {{ end }}
     {{ if .Params.optionalText2 }}
-    <div class="flex items-center justify-center w-full text-center mt-40">
-        <div class="flex flex-col items-center w-4/5">
-            <h2 class="text-5xl font-black mb-3">{{ .Params.optionalTitle2 }}</h2>
-            <p class="text-xl">{{ .Params.optionalContentText2 }}</p>
+    <div class="flex items-center justify-center w-full text-center mt-20 sm:mt-40">
+        <div class="flex flex-col items-center w-3/5 sm:w-4/5">
+            <h2 class="font-black mb-3 text-3xl sm:text-5xl">{{ .Params.optionalTitle2 }}</h2>
+            <p class="text-base sm:text-xl">{{ .Params.optionalContentText2 }}</p>
             {{ if or (.Params.optionalButton1) (.Params.optionalButton2) }}
-                <div class="flex items-center justify-center w-4/5">
+                <div class="flex items-center justify-center w-4/5 flex-col sm:flex-row" id="optionalText2">
                     {{ if  .Params.optionalButton1}}
-                        <button class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-green-400 to-purple-500 text-white font-bold py-2 rounded-lg w-40 h-12 m-4"><a href="">{{ .Params.optionalButton1Text }}</a></button>
+                        <button class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-green-400 to-purple-500 text-white font-bold py-2 rounded-lg h-12 m-4 w-32 sm:w-40 sm:h-12"><a href="">{{ .Params.optionalButton1Text }}</a></button>
                     {{ end }}
                     {{ if  .Params.optionalButton2}}
-                        <button class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-green-400 to-purple-500 text-white font-bold py-2 rounded-lg w-40 h-12 m-4"><a href="">{{ .Params.optionalButton2Text }}</a></button>    
+                        <button class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-green-400 to-purple-500 text-white font-bold py-2 rounded-lg h-12 m-4 w-32 sm:w-40 sm:h-12"><a href="">{{ .Params.optionalButton2Text }}</a></button>    
                     {{ end }}
                 </div>    
             {{ end }}
