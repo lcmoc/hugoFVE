@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://lcmoc.github.io/"
 languageCode = "en-us"
 title = "FVE react"
 theme = "windytheme"
