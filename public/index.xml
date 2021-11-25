@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wilkommen on FVE react</title>
+    <link>https://lcmoc.github.io/</link>
+    <description>Recent content in Wilkommen on FVE react</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Aug 2021 11:23:14 +0200</lastBuildDate><atom:link href="https://lcmoc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anmelden</title>
+      <link>https://lcmoc.github.io/form/</link>
+      <pubDate>Fri, 20 Aug 2021 10:26:09 +0200</pubDate>
+      
+      <guid>https://lcmoc.github.io/form/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Über Uns</title>
+      <link>https://lcmoc.github.io/about/</link>
+      <pubDate>Thu, 12 Aug 2021 07:53:15 +0200</pubDate>
+      
+      <guid>https://lcmoc.github.io/about/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spielplan</title>
+      <link>https://lcmoc.github.io/agenda/</link>
+      <pubDate>Sun, 08 Aug 2021 10:33:01 +0200</pubDate>
+      
+      <guid>https://lcmoc.github.io/agenda/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

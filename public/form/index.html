@@ -53,9 +53,7 @@
 <div class="content mb-24 sm:mb-52">
     <div class="flex items-center justify-center mt-20 flex-col">
         <div class="flex flex-col justify-center w-3/5 text-center sm:w-4/5">
-            <h1 class="font-black text-4xl sm:text-5xl mb-5">Wilkommen</h1>
-            
-                <p class="text-base sm:text-lg">Unser Anliegen ist es Jugendliche und Erwachsene zum Spielen zu motivieren. Deshalb bemühen wir uns regelmässige Events zu planen, bei denen jedes Mitglied teilnehmen kann. Falls Sie Interesse an einem Schnuppertag haben, können Sie uns gerne kontaktieren.</p>
+            <h1 class="font-black text-4xl sm:text-5xl mb-5">Anmelden</h1>
             
         </div>
     </div>
@@ -64,22 +62,47 @@
 
     
     
-        <div class="section flex flex-col text-center justify-center items-center bg-gradient-to-r from-purple-500 to-green-400 w-full h-72 shadow-2xl mt-24 sm:mt-40">
-            <h2 class="text-3xl font-black mb-3 sm:text-4xl">Schnuppertag</h2>
-            <p class="text-base sm:text-xl">Melden sie sich hier zu einem Schnuppertag an</p>
-            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 border-blue-700 hover:border-blue-500 rounded-lg m-4 w-32 sm:w-40 sm:h-12"><a href=/about#optionalText2  >Anmelden</a></button>
+    
+    
+    <div class="form flex items-center justify-center mt-10">
+    <form action="" class="w-2/4 flex border h-auto justify-center items-center flex-col shadow-xl bg-gray-100 p-10">
+        
+        <div class="m-5 flex h-auto justify-between w-3/6">
+            <label for="firstName" class="text-xl">*Vorname:</label>
+            <input type="text" name="firstName" class="border-2">
         </div>
-    
-    
-    
-        <div class="flex items-center justify-center w-full text-center mt-24 sm:mt-40">
-            <div class="flex flex-col items-center w-3/5">
-                <h2 class="text-3xl font-black mb-3 sm:text-5xl">News</h2>
-                <p class="text-base sm:text-xl">Hier werden Sie zukünfig die News sehen.</p>    
-            </div>
+        <div class="m-5 flex h-auto justify-between w-3/6">
+            <label for="lastName" class="text-xl">*Nachname:</label>
+            <input type="text" name="lastName" class="border-2">    
         </div>
+        <div class="m-5 flex h-auto justify-between w-3/6">
+            <label for="email" class="text-xl">*Emailadresse:</label>
+            <input type="text" name="email" class="border-2">    
+        </div>
+        <p>Geben sie hier bitte Ihre nachricht ein:</p>
+        <div class="m-5 flex justify-between w-3/6 h-full">
+            <input type="text" class="w-full h-2/4 border-2">
+        </div>
+        <div class="m-5 flex justify-center w-3/6 h-full">
+           <p class="text-sm">* Pflichtfelder</p>
+        </div>
+    </form>
+</div>l
     
-    
+    <div class="flex items-center justify-center w-full text-center mt-20 sm:mt-40">
+        <div class="flex flex-col items-center w-3/5 sm:w-4/5">
+            <h2 class="font-black mb-3 text-3xl sm:text-5xl">Oder Telefonisch</h2>
+            <p class="text-base sm:text-xl"></p>
+            
+                <div class="flex items-center justify-center w-4/5 flex-col sm:flex-row" id="optionalText2">
+                    
+                        <button class="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 bg-gradient-to-r from-green-400 to-purple-500 text-white font-bold py-2 rounded-lg h-12 m-4 w-32 sm:w-40 sm:h-12"><a href="">Anrufen</a></button>
+                    
+                    
+                </div>    
+            
+        </div>
+    </div>
     
 </div><footer class="bg-gradient-to-r from-purple-500 to-green-400 h-full w-full">
   <br />
